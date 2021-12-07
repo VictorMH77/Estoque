@@ -1,0 +1,102 @@
+<div class="teste">
+  <div class="title">Adicionar Produto</div>
+  <div class="form">
+    <form
+      (ngSubmit)="onSubmit(refLocalForm)"
+      #refLocalForm="ngForm"
+      ngNativeValidate
+    >
+      <div class="form-group">
+        <label>Nome do Produto</label>
+        <input
+          type="text"
+          id="produtonome"
+          class="form-control"
+          name="produtonome"
+          ngModel
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label>Categoria</label>
+        <select
+          type="text"
+          id="categoria"
+          class="form-control"
+          name="categoria"
+          ngModel
+          required
+        >
+          <option value="">Selecione</option>
+          <option value="Frios">Frios</option>
+          <option value="Frutas e Verduras">Frutas e verduras</option>
+          <option value="Açougue">Açougue</option>
+          <option value="Limpeza">Limpeza</option>
+          <option value="Higiene">Higiene</option>
+          <option value="Bebidas">Bebidas</option>
+          <option value="Massas">Massas</option>
+          <option value="Enlatados">Enlatados</option>
+          <option value="Cereais">Cereais</option>
+          <option value="Padaria">Padaria</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Quantidade</label>
+        <input
+          type="text"
+          id="quantidade"
+          class="form-control"
+          name="quantidade"
+          ngModel
+          required
+        />
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn">Adicionar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!--<div class="col-md-8 col-md-offset-2">
+    <form 
+    (ngSubmit)="onSubmit(refLocalForm)" 
+    #refLocalForm="ngForm" 
+    ngNativeValidate>
+        <div class="form-group">
+            <input  type="text"
+                    id="content"
+                    class="form-control"
+                    [ngModel]="produto.nome"
+                    name="nome"
+                    placeholder="Nome do produto"
+                    required>
+        </div>
+        <div class="form-group">
+            <select  type="text"
+                    id="content"
+                    class="form-control"
+                    [ngModel]="produto.categoria"
+                    name="categoria"
+                    placeholder="Categoria"
+                    required>
+                <option value="">Categoria</option>
+                <option value="frios">Frios</option>
+                <option value="frutasVerduras">Frutas e verduras</option>
+                <option value="carnes">Carnes</option>
+                <option value="limpeza">Limpeza</option>
+                <option value="higiene">Higiene</option>
+                <option value="bebidas">Bebidas</option>
+        </div>
+        <div class="form-group">
+            <input  type="text"
+                    id="content"
+                    class="form-control"
+                    [ngModel]="produto.qtdInicial"
+                    name="qtdInicial"
+                    placeholder="Quantidade"
+                    required>
+        </div>
+        <button type="submit" class="btn btn-primary">Adicionar</button>
+    </form>
+</div>-->

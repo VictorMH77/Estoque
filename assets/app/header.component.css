@@ -1,0 +1,31 @@
+.row {
+    background-color: none;
+    align-items: center;
+}
+
+.row .nav{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.row .nav .header {
+    list-style: none;
+    padding: 0;
+}
+
+.row .nav .header li{
+    display: inline-block;
+    font-size: 25px;
+    
+}
+
+.row .nav .header a{
+    margin: 10px;
+    color: white;
+}
+
+.row .nav .header a:hover{
+    color: rgb(0, 197, 85);
+}

@@ -1,0 +1,23 @@
+<!--<article> class="panel panel-default"
+    <div> class="panel-body"
+        {{estoqueVarClasse.produtonome}}
+    </div>    
+        <div> class="config"" 
+            <a (click)="onEdit()">Edit</a>
+            <a (click)="onDelete()">Delete</a>
+        </div>
+    
+</article>-->
+
+<div class="container">
+  <div class="card">
+    <h2>{{estoque.produtonome}}</h2>
+    <p class="subtitle">Categoria</p>
+    <p class="desc">{{estoque.categoria}}</p>
+    <p class="subtitle">Quantidade</p>
+    <p class="desc">{{estoque.quantidade}}</p>
+    <div class="box">
+      <a (click)="onDelete()">Delete</a>
+    </div>
+  </div>
+</div>
